@@ -7,13 +7,13 @@
 
 `build`目录里面有docker构建文件，默认以静态链接的方式构建所有架构的用户模式qemu-sec程序
 
-`qemu-sec目录` 或 `tar包`下是已经构建好的程序，可以直接拿去使用
+`qemu-sec`目录下是已经构建好的程序，可以直接拿去使用
 
 加以下参数可实现
 ```shell
 -nx           QEMU_NX           enable NX implementation
--pie          QEMU_NOPIE        enable PIE randomization
--aslr         QEMU_NOASLR       enable ASLR randomization
+-pie          QEMU_PIE        enable PIE randomization
+-aslr         QEMU_ASLR       enable ASLR randomization
 -wxorx        QEMU_WXORX        enable W^X implementation
 ```
 
